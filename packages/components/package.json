@@ -1,0 +1,36 @@
+{
+  "name": "zh-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "vite build",
+    "build:less": "esno build/buildLess",
+    "build": "vite build & esno build/buildLess"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "typings": "lib/components/src/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vant-ui/vant.git",
+    "directory": "packages/vant"
+  },
+  "bugs": "https://github.com/vant-ui/vant/issues",
+  "keywords": [
+    "zh-ui",
+    "vue3组件库"
+  ],
+  "author": "zh",
+  "license": "MIT",
+  "dependencies": {
+    "@zh-ui/utils": "workspace:^1.0.0"
+  }
+}
